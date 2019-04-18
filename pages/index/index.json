@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "yd-nav":"/components/ydNav/ydNav",
+    "back-top":"/components/backTop/backTop"
+  },
+  
+  "onReachBottomDistance":30
+  
+}

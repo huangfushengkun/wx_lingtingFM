@@ -1,0 +1,3 @@
+<!--pages/articleList/articleList.wxml-->
+
+<article article="{{article}}" bindlike="setLike"></article>

@@ -1,0 +1,4 @@
+function sliceContent (content) {
+  return content.slice(0,60) + "..."
+}
+module.exports = sliceContent

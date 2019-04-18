@@ -1,0 +1,24 @@
+/* pages/profile/profile.wxss */
+.avatar{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 100rpx auto 50rpx;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 38rpx;
+  line-height: 200rpx;
+  background-color: #ccc;
+}
+.info {
+  text-align: center;
+}
+.avatar-img{
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 100rpx auto ;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 38rpx;
+  line-height: 200rpx;
+}

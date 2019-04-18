@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+        "yd-music": "/components/ydMusic/ydMusic"
+    }
+}

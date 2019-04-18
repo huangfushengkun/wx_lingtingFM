@@ -1,0 +1,40 @@
+/* components/ydMusic/ydMusic.wxss */
+.player {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8rpx;
+  /* background-color: #f30; */
+  z-index: 2;
+}
+.progress {
+  background-color: rgba(247, 90, 78, .3);
+  position: relative;
+  height: 100%;
+}
+.progress .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  /* width: 10%; */
+  background-color: #f30;
+}
+.player .time {
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 14rpx;
+  right: 10rpx;
+  color: rgba(255, 255, 255, .6)
+}
+
+.player-controller image {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0)
+}

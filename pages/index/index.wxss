@@ -1,0 +1,26 @@
+/**index.wxss**/
+.list{
+  padding-top: 80rpx;
+}
+.article {
+  padding: 10rpx;
+}
+.article text {
+  font-size: 28rpx;
+}
+.article image {
+  display: block;
+  height:200rpx;
+  width: 100%;
+}
+.article .content {
+  font-size: 30rpx;
+  color: #666;
+}
+.no-data {
+  display: block;
+  text-align: center;
+  color: purple;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+}

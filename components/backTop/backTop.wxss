@@ -1,0 +1,10 @@
+/* components/backTop/backTop.wxss */
+.back-top{
+  position: fixed; 
+  top: 80%;
+  right: 5%;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}

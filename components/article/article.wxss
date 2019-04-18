@@ -1,0 +1,55 @@
+/* components/article/article.wxss */
+.article-img {
+  width: 100%;
+}
+.article-content {
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+.article-header {
+  position: relative
+}
+.article-header .article-info {
+  position: absolute;
+  bottom: 40rpx;
+  padding: 0 20rpx;
+  color: #fff;
+  z-index: 1;
+}
+.article-header .title {
+  font-size: 44rpx;
+}
+.article-header .human {
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 0.6)
+}
+.article-header .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 160rpx;
+  background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0,rgba(0,0,0,0)), color-stop(1,#000))
+}
+
+.like {
+  position: fixed;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  bottom: 100rpx;
+  right: 30rpx;
+  background:rgba(6,6,6,0.5);
+  /* background:rgba(255,15,00,0.5); */
+}
+.like.active{
+  background:rgba(255,15,00,0.5);
+
+}
+.like image {
+  position: absolute;
+  top: 15rpx;
+  left: 15rpx;
+  width: 60rpx;
+  height: 60rpx;
+}

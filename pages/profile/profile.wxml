@@ -1,0 +1,9 @@
+<!--pages/profile/profile.wxml-->
+<view class='info'>
+  <view class='avatar' wx:if="{{!userInfo}}">未登陆</view>
+  <block wx:else>
+    <image class='avatar-img' src='{{userInfo.avatarUrl}}'></image>
+    <text>{{userInfo.nickName}}</text>  
+  </block>
+  <button wx:if="{{!userInfo}}" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>登陆</button>
+</view>

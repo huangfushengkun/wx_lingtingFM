@@ -1,0 +1,10 @@
+/* pages/login/login.wxss */
+.login{
+  padding: 10rpx 50rpx;
+}
+.login input {
+  padding: 10rpx 0;
+}
+.login button {
+  
+}

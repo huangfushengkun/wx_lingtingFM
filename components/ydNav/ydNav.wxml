@@ -1,0 +1,8 @@
+<!--components/yeNav/ydNav.wxml-->
+<view class='nav'>
+  <text bindtap='switchTab' data-id="{{item.id}}"
+    wx:for="{{list}}" 
+    wx:key="{{index}}"
+    class="{{activeId === item.id ? 'active' : ''}}">{{item.type}}</text>
+  
+</view>

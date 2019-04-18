@@ -1,0 +1,22 @@
+<!--components/article/article.wxml-->
+<wxs src="./article.wxs" module="r"/>
+<view class='article'>
+  <view class="article-header">
+    <yd-music url="{{article.mp3_url}}"></yd-music>
+    <image class="article-img" src='{{article.img_url}}'></image>
+    <view class="article-info">
+      <view class="title">{{article.title}}</view>
+      <view class="human">
+      文：{{article.author}} 主播：{{article.podcast}}
+      </view>
+    </view>
+    <view class="bottom"></view>
+  </view>
+  <view class="article-content">
+    <rich-text nodes="{{r(article.content)}}"></rich-text>
+  </view>
+  <button bindtap='like' data-id='{{article.id}}'>点击</button>
+  <view class='like {{article.isLiked ? "active" : ""}}' bindtap='like' data-id='{{article.id}}'>
+    <image src='/imgs/like.png' data-id='{{article.id}}'></image>
+  </view>
+</view>
