@@ -1,4 +1,12 @@
 function sliceContent (content) {
   return content.slice(0,60) + "..."
 }
-module.exports = sliceContent
+
+function urlPass (url) {
+  url = 'http://yuedufm.com'+ url.slice(15,url.length)
+  return url
+}
+module.exports = {
+  sliceContent:sliceContent,
+  urlPass:urlPass
+};

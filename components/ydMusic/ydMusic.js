@@ -37,8 +37,12 @@ Component({
   observers: {
     url (value) {
       console.log(value)
+      console.log(value.slice(15,value.length))
+      value = 'http://yuedufm.com'+value.slice(15,value.length)
       app.globalData.audio.src = value
         // console.log(app.globalData.audio)
+      console.log(value)
+
 
     }
   },

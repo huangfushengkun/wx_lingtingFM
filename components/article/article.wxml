@@ -1,5 +1,5 @@
 <!--components/article/article.wxml-->
-<wxs src="./article.wxs" module="r"/>
+<wxs src="./article.wxs" module="replace"/>
 <view class='article'>
   <view class="article-header">
     <yd-music url="{{article.mp3_url}}"></yd-music>
@@ -13,7 +13,7 @@
     <view class="bottom"></view>
   </view>
   <view class="article-content">
-    <rich-text nodes="{{r(article.content)}}"></rich-text>
+    <rich-text nodes="{{replace(article.content)}}"></rich-text>
   </view>
   <button bindtap='like' data-id='{{article.id}}'>点击</button>
   <view class='like {{article.isLiked ? "active" : ""}}' bindtap='like' data-id='{{article.id}}'>

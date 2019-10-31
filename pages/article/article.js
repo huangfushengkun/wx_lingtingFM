@@ -19,7 +19,7 @@ Page({
   //     title: '请求中...',
   //   })
   //   wx.request({
-  //     url: `http://localhost:3000/api/article/${id}`,
+  //     url: `https://huangfushengkun.online/api/article/${id}`,
   //     success: (res) => {
   //       // console.log(res)
   //       this.setData({
@@ -45,6 +45,10 @@ Page({
       title: '加载中...',
     })
     getArticle(id).then(res => {
+      let url = res.data.res.img_url
+      url = 'http://yuedufm.com'+ url.slice(15,url.length)
+      // console.log(res.data.res.img_url)
+      res.data.res.img_url = url
       this.setData({
         article: res.data.res
       },function () {

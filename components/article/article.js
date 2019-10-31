@@ -27,7 +27,7 @@ Component({
       const token = wx.getStorageSync('token')
       //调用点赞接口
       wx.request({
-        url: `http://localhost:3000/api/article/${id}/like`,
+        url: `https://huangfushengkun.online/api/article/${id}/like`,
         
         header: {
           "Authorization": "bearar " + token

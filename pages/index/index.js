@@ -31,7 +31,7 @@ Page({
   //请求导航数据
   getNavData () {
     wx.request({
-      url: 'http://localhost:3000/api/types',
+      url: 'https://huangfushengkun.online/api/types',
       success: (res) => {
         this.setData({
           types:res.data.res
@@ -46,7 +46,7 @@ Page({
           title: '正在加载...',
         })
         wx.request({
-          url: `http://localhost:3000/api/articles/${id}/page/${page}`,
+          url: `https://huangfushengkun.online/api/articles/${id}/page/${page}`,
           success: (res) => {
             // console.log(res)
             if (res.data.res.articles.length) { //有数据

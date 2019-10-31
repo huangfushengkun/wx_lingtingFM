@@ -23,10 +23,13 @@ Page({
       title: '请求中...',
     })
     wx.request({
-      url: `http://localhost:3000/api/article/${id}`,
+      url: `https://huangfushengkun.online/api/article/${id}`,
       header,
       success: (res) => {
-        // console.log(res)
+        // console.log(res.data.res.img_url)
+        let url = res.data.res.img_url
+        url = 'http://yuedufm.com'+ url.slice(15,url.length)
+        res.data.res.img_url = url
         this.setData({
           article: res.data.res
         }, function () {

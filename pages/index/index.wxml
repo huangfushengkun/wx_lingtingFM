@@ -6,9 +6,9 @@ list="{{types}}"></yd-nav>
 
 <view class='list'>
   <view wx:for="{{articles}}" wx:key="{{article.id}}" wx:for-item="article" bindtap='goArticle' data-id="{{article.id}}" class='article'>
-    <image data-id="{{article.id}}" mode='center' src='{{article.img_url}}'></image>
+    <image data-id="{{article.id}}" mode='center' src='{{slice.urlPass(article.img_url)}}'></image>
     <text data-id="{{article.id}}">{{article.title}}</text>
-    <view class="content">{{slice(article.content)}}</view>
+    <view class="content">{{slice.sliceContent(article.content)}}</view>
   </view>
   <text wx:if="{{noData}}" class='no-data'>- 我是有底线的 -</text>
 </view>

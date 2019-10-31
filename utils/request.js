@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:3000/api"
+const baseURL = "https://huangfushengkun.online/api"
 //获取token 
 const token = wx.getStorageSync('token')
 const header = {}

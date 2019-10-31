@@ -15,7 +15,7 @@ Page({
       success: ({code}) => {
         //调用接口并把code传递过去
         wx.request({
-          url: 'http://localhost:3000/api/user/login',
+          url: 'https://huangfushengkun.online/api/user/login',
           method: 'POST',
           data: {
             ...this.data.user,
